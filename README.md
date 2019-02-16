@@ -15,3 +15,10 @@ main components
   -8 ohm speaker
   -buzzer
   -battery
+  -rellay
+  -sound module
+  -memory card
+  -wires
+  
+  the threshold is calculated and the program to calculate threshold is also uploaded.
+  bee humming sound is genrated to disturb the elephant.
