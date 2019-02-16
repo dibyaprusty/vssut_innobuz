@@ -1,17 +1,20 @@
 import serial
-
-c=0
+import webbrowser
 ser = serial.Serial()
 ser.baudrate = 9600
-ser.port = 'COM4'
-
+ser.port = 'COM6'
+ser.open()
 while(True):
-    ser.open()
     s=ser.read(3)
     st=s.decode('utf-8')
-    f=open("Demo1.txt","a")
-    f.write(st)
-    print(st)
-    c=c+1
-    if(c==10):
-        break
+    ser.flushInput()
+    if(st!=""):
+        f=open("php.txt","w")
+        print(st)
+        f.write(st)
+        f.close()
+        webbrowser.open('localhost/elephanthome.php')
+        
+        
+        
+  
