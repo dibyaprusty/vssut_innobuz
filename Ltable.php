@@ -28,17 +28,20 @@ if($db -> connect_errno>0)
     </head> 
 <header>
 <div>
-<p id="heading">Elephant Alert Status</p></div>
-<div class="ele1"><img src="images/ele.png" width="200px" height="200px" >
+	<p id="heading">Elephant Alert Status</p>
 </div>
-<div class="ele2"><img src="images/ele.png" width="200px" height="200px" >
+<div class="ele1">
+	<img src="images/ele.png" width="200px" height="200px" >
+</div>
+<div class="ele2">
+	<img src="images/ele.png" width="200px" height="200px" >
 </div>
 <nav class="menu">
-<ul>
-<li>Home</li>
-<li>Location Codes</li>
-<li id="lastlink">History</li>
-</ul>
+	<ul>
+		<a href="elephanthome.php"><li>Home</li></a>
+		<a href="Ltable.php"><li>Location Codes</li></a>
+		<a href="history.php"><li id="lastlink">History</li></a>
+	</ul>
 </nav>
 
 </header> 
