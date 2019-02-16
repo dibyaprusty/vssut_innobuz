@@ -27,6 +27,6 @@ if(a0!=0 || a1!=0 || a2!=0 || a3!=0 )
   Serial.print(" ");
   Serial.println(a3);
   delay(100);
- // Serial.println("elephant detected.....!!!!!");
+  Serial.println("elephant detected.....!!!!!");
 }
 }
